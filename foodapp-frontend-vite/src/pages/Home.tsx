@@ -26,48 +26,46 @@ const Home: React.FC = () => {
                     <div className="container hero-left">
                         <img src={logo} alt="Mr.He's Kitchen Logo" className="logo" />
                         <div className="hero-text">
-                            <h1> Authentic Cantonese Food</h1>
+                            <h1> 老何私房菜</h1>
                             <p>
-                                Our kitchen serves delicious, authentic and affordable Cantonese
-                                food. The freshest ingredients require only the simplest cooking.
-                                You can also taste native food in a foreign country.
+                                地道广东味儿
                             </p>
                         </div>
                     </div>
 
                     <div className="actions">
-                        <Link className="btn btn-primary" to="/menu">Make Orders</Link>
-                        <Link className="btn btn-outline" to="/orders">Check my Orders</Link>
+                        <Link className="btn btn-primary" to="/menu">下单</Link>
+                        <Link className="btn btn-outline" to="/orders">查看订单</Link>
                     </div>
                 </div>
             </header>
 
             <section className="section">
                 <div className="container">
-                    <h2>Why Choose Us？</h2>
-                    <p className="lead">We use the freshest ingredients and provide the most authentic taste.We value your safety and health.</p>
+                    <h2>为什么选我们？</h2>
+                    <p className="lead">美味卫生又实惠</p>
                     <div className="grid">
                         <div className="card">
-                            <h3>Seafood</h3>
+                            <h3>海鲜</h3>
                             <p>Delicious and fresh seafood dishes. You can taste the selfless gift of the sea</p>
                             <img src={seafood} alt="seafood0" className="dish-img" />
                         </div>
                         <div className="card">
-                            <h3>Meat</h3>
+                            <h3>肉类</h3>
                             <p>Serving classic Cantonese dishes: plain chicken, BBQ pork, roast duck, etc</p>
                             <img src={chicken}
                                 alt="chicken"
                                 className="dish-img" />
                         </div>
                         <div className="card">
-                            <h3>Soup</h3>
+                            <h3>汤类</h3>
                             <p>Lao Huo Tang is a traditional Cantonese dish, healthy and delicious. We offer a variety of old fire soups.</p>
                             <img src={baoyu}
                                 alt="baoyu"
                                 className="dish-img" />
                         </div>
                         <div className="card">
-                            <h3>Special Dishes</h3>
+                            <h3>特色粤菜</h3>
                             <p>We also serve Cantonese specialties, such as dim sum, Chang fen, special dishes, etc.</p>
                             <img src={zaocha}
                                 alt="zaocha"
@@ -78,9 +76,9 @@ const Home: React.FC = () => {
             </section>
             <section className="section ppt">
                 <div className="container">
-                    <h2 style={{ marginBottom: 12 }}>Chef’s Picks</h2>
+                    <h2 style={{ marginBottom: 12 }}>主厨推荐</h2>
                     <p className="lead" style={{ marginBottom: 16, color: "var(--muted)" }}>
-                        Seasonal recommendations — taste the classics of Cantonese cuisine.
+                        当季最好的菜品！
                     </p>
 
                     <Carousel slides={slides} interval={4000} />
@@ -91,8 +89,8 @@ const Home: React.FC = () => {
                     <h2>Next Step</h2>
                     <p className="lead">First register and log in, then go to the menu page to select dishes, submit orders, and finally pay or cancel in "My Orders".</p>
                     <div className="actions">
-                        <Link className="btn btn-primary" to="/register">Register Now</Link>
-                        <Link className="btn btn-outline" to="/login">Already Registered? Log In</Link>
+                        <Link className="btn btn-primary" to="/register">注册</Link>
+                        <Link className="btn btn-outline" to="/login">已有账号？去登录</Link>
                     </div>
                 </div>
             </section>
